@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Barber Shot`,
+    // TODO: decription
+    description: `Barber Shot to męski salon fryzjerski, a także akcesoria do pielęgnacji włosów i zarostu. Znajdziesz nas w Limanowej i w Nowym Sączu. Złóż rezerwację online!`,
+    author: `@mmpapiez`,
+    keywords: 'barber, barbershot, fryzjer, fryzjer limanowa, fryzjer nowy sacz, mateusz szpilka,',
+    siteUrl: `https://www.barbershot.pl`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,16 +25,17 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        background_color: `#BF8C5A`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Dosis\:300,400,700`, `Raleway\:300,400,700`],
+        display: "swap",
+      },
+    },
   ],
 }
